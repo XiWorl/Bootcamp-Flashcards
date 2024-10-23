@@ -35,6 +35,9 @@ function addCard() {
     let defValue = document.getElementById("new-definition").value
     let tble = {term: termValue, definition: defValue}
     flashcards.push(tble)
+
+    document.getElementById("new-term").value = ""
+    document.getElementById("new-definition").value = ""
 }
 
 
