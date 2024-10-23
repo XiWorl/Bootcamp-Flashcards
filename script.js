@@ -12,8 +12,13 @@ let showingTerm = true;
 
 // Start with this function to simply display the card
 function displayCard() {
-
+    if (showingTerm == true) {
+    let card = document.getElementById("flashcard")
+    card.innerText = flashcards[0].term
+    }
 }
+
+displayCard()
 
 // The rest of the code you will write is apart of event listeners
 
